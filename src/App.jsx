@@ -1,10 +1,13 @@
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 import AppLayout from "./ui/AppLayout";
 
 function App() {
   return (
     <>
-      <h1>Hello world</h1>
+      <Header />
       <AppLayout />
+      <Footer />
     </>
   );
 }
