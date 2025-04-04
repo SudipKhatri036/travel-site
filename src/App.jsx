@@ -1,5 +1,12 @@
+import AppLayout from "./ui/AppLayout";
+
 function App() {
-  return <div className="text-slate-800">Hello world</div>;
+  return (
+    <>
+      <h1>Hello world</h1>
+      <AppLayout />
+    </>
+  );
 }
 
 export default App;
