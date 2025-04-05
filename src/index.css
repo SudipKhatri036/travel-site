@@ -11,13 +11,14 @@
   --color-border-primary: #d5d7da;
   --color-border-secondary: #e9eaeb;
   --color-tertiary: #535862;
+  --color-txt-secondary: #414651;
 }
 
 body {
   font-family: "Inter", sans-serif;
 }
 
-p,
-a {
+p {
   color: var(--color-tertiary);
+  font: inherit;
 }
