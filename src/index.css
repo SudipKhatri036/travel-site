@@ -19,6 +19,6 @@ body {
 }
 
 p {
-  color: var(--color-tertiary);
+  /* color: var(--color-tertiary); */
   font: inherit;
 }
