@@ -1,9 +1,10 @@
 import React from "react";
 import SectionHeading from "./SectionHeading";
+import Section from "../ui/Section";
 
 function Promotion() {
   return (
-    <div className="max-w-7xl mx-auto py-8 px-6">
+    <Section>
       {/* Promotion feature */}
       <div className="flex items-center gap-4 pb-10">
         <div className="text-center">
@@ -54,7 +55,7 @@ function Promotion() {
 
           <a
             href="#"
-            className="text-brand capitalize font-semibold block flex items-center gap-1 hover:scale-105 transition-all duration-300"
+            className="text-brand capitalize font-semibold  flex items-center gap-1 hover:scale-105 transition-all duration-300"
           >
             View All <span className="mt-1 ">&#8599;</span>
           </a>
@@ -72,7 +73,7 @@ function Promotion() {
           </div>
         </div>
       </div>
-    </div>
+    </Section>
   );
 }
 

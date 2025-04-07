@@ -1,12 +1,12 @@
 import { CiLocationOn } from "react-icons/ci";
 import CardContainer from "./CardContainer";
-import Card from "./CardContainer";
-import DestinationCard from "./DestinationCard";
 import SectionHeading from "./SectionHeading";
+import NavigatorCard from "./NavigatorCard";
+import Section from "../ui/Section";
 
 function DiscountAd() {
   return (
-    <div className="max-w-7xl mx-auto py-8 px-6">
+    <Section>
       <SectionHeading
         heading="Discount up to 30 %off + on hotels"
         subHeading="Book your stay now and enjoy amazing savings on top accommodations "
@@ -31,7 +31,7 @@ function DiscountAd() {
                 (5.2k reviews)
               </p>
 
-              <p className="space-x-1 text-tertiary text-sm">
+              <p className="flex items-center gap-1 text-tertiary text-sm">
                 <span className="inline-block">
                   <CiLocationOn />
                 </span>
@@ -39,9 +39,9 @@ function DiscountAd() {
               </p>
             </div>
 
-            <p className="space-x-1 text-tertiary text-sm mt-6">
+            <p className="flex items-center  text-tertiary text-sm mt-6">
               <span className="line-through">$150</span>
-              <strong>$75</strong>/night
+              <strong className="ml-1">$75</strong>/night
             </p>
           </div>
         </CardContainer>
@@ -63,7 +63,7 @@ function DiscountAd() {
                 (5.2k reviews)
               </p>
 
-              <p className="space-x-1 text-tertiary text-sm">
+              <p className="flex items-center gap-1 text-tertiary text-sm">
                 <span className="inline-block">
                   <CiLocationOn />
                 </span>
@@ -71,9 +71,9 @@ function DiscountAd() {
               </p>
             </div>
 
-            <p className="space-x-1 text-tertiary text-sm mt-6">
+            <p className="flex items-center  text-tertiary text-sm mt-6">
               <span className="line-through">$150</span>
-              <strong>$75</strong>/night
+              <strong className="ml-1">$75</strong>/night
             </p>
           </div>
         </CardContainer>
@@ -95,7 +95,7 @@ function DiscountAd() {
                 (5.2k reviews)
               </p>
 
-              <p className="space-x-1 text-tertiary text-sm">
+              <p className="flex items-center  text-tertiary text-sm">
                 <span className="inline-block">
                   <CiLocationOn />
                 </span>
@@ -103,9 +103,9 @@ function DiscountAd() {
               </p>
             </div>
 
-            <p className="space-x-1 text-tertiary text-sm mt-6">
+            <p className="flex items-center  text-tertiary text-sm mt-6">
               <span className="line-through">$150</span>
-              <strong>$75</strong>/night
+              <strong className="ml-1">$75</strong>/night
             </p>
           </div>
         </CardContainer>
@@ -127,7 +127,7 @@ function DiscountAd() {
                 (5.2k reviews)
               </p>
 
-              <p className="space-x-1 text-tertiary text-sm">
+              <p className="flex items-center gap-1 text-tertiary text-sm">
                 <span className="inline-block">
                   <CiLocationOn />
                 </span>
@@ -135,14 +135,22 @@ function DiscountAd() {
               </p>
             </div>
 
-            <p className="space-x-1 text-tertiary text-sm mt-6">
+            <p className="flex items-center  text-tertiary text-sm mt-6">
               <span className="line-through">$150</span>
-              <strong>$75</strong>/night
+              <strong className="ml-1">$75</strong>/night
             </p>
           </div>
         </CardContainer>
+
+        <NavigatorCard
+          imgSrc="/images/discount/discount-img.png"
+          title="Find the Best Stays for Your Next Getaway! 🌟"
+          btnTxt="Book Hotel"
+          gradientFrom="#0538A900"
+          gradientTo="#0538A9"
+        />
       </div>
-    </div>
+    </Section>
   );
 }
 

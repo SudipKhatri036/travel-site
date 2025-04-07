@@ -1,12 +1,14 @@
 import React from "react";
 import SectionHeading from "./SectionHeading";
 import CardContainer from "./CardContainer";
-import { CiCalendar, CiLocationOn } from "react-icons/ci";
+import { CiCalendar } from "react-icons/ci";
 import { IoPeopleOutline } from "react-icons/io5";
+import NavigatorCard from "./NavigatorCard";
+import Section from "../ui/Section";
 
 function FeaturedAd() {
   return (
-    <div className="max-w-7xl mx-auto py-8 px-6">
+    <Section>
       <SectionHeading
         heading="Featured Travel Package"
         subHeading="Handpicked deals for your next perfect getaway—explore, book, and save now!"
@@ -26,18 +28,18 @@ function FeaturedAd() {
               <h3 className="mb-1.5 text-md font-bold">
                 Fantastic Dubai Tour Package
               </h3>
-
-              <p className="flex items-center gap-1 text-tertiary text-sm">
-                <span className="inline-block">
-                  <CiCalendar />
-                </span>
-                5 days
-              </p>
-              <p className="flex items-center gap-1 text-tertiary text-sm">
-                <span className="inline-block">
+              <div>
+                <p className="flex items-center gap-1 text-tertiary text-sm">
+                  <CiCalendar />5 days
+                </p>
+                <p className="flex items-center gap-1 text-tertiary text-sm">
                   <IoPeopleOutline />
-                </span>
-                1-8 people
+                  1-8 people
+                </p>
+              </div>
+
+              <p className="flex items-center  text-tertiary text-sm mt-6">
+                From <strong className="ml-1">$1,250</strong>/pax
               </p>
             </div>
           </div>
@@ -53,17 +55,18 @@ function FeaturedAd() {
                 Fantastic Dubai Tour Package
               </h3>
 
-              <p className="flex items-center gap-1 text-tertiary text-sm">
-                <span className="inline-block">
-                  <CiCalendar />
-                </span>
-                5 days
-              </p>
-              <p className="flex items-center gap-1 text-tertiary text-sm">
-                <span className="inline-block">
+              <div>
+                <p className="flex items-center gap-1 text-tertiary text-sm">
+                  <CiCalendar />5 days
+                </p>
+                <p className="flex items-center gap-1 text-tertiary text-sm">
                   <IoPeopleOutline />
-                </span>
-                1-8 people
+                  1-8 people
+                </p>
+              </div>
+
+              <p className="flex items-center  text-tertiary text-sm mt-6">
+                From <strong className="ml-1">$1,250</strong>/pax
               </p>
             </div>
           </div>
@@ -82,17 +85,18 @@ function FeaturedAd() {
                 Fantastic Dubai Tour Package
               </h3>
 
-              <p className="flex items-center gap-1 text-tertiary text-sm">
-                <span className="inline-block">
-                  <CiCalendar />
-                </span>
-                5 days
-              </p>
-              <p className="flex items-center gap-1 text-tertiary text-sm">
-                <span className="inline-block">
+              <div>
+                <p className="flex items-center gap-1 text-tertiary text-sm">
+                  <CiCalendar />5 days
+                </p>
+                <p className="flex items-center gap-1 text-tertiary text-sm">
                   <IoPeopleOutline />
-                </span>
-                1-8 people
+                  1-8 people
+                </p>
+              </div>
+
+              <p className="flex items-center  text-tertiary text-sm mt-6">
+                From <strong className="ml-1">$1,250</strong>/pax
               </p>
             </div>
           </div>
@@ -111,23 +115,29 @@ function FeaturedAd() {
                 Fantastic Dubai Tour Package
               </h3>
 
-              <p className="flex items-center gap-1 text-tertiary text-sm">
-                <span className="inline-block">
-                  <CiCalendar />
-                </span>
-                5 days
-              </p>
-              <p className="flex items-center gap-1 text-tertiary text-sm">
-                <span className="inline-block">
+              <div>
+                <p className="flex items-center gap-1 text-tertiary text-sm">
+                  <CiCalendar />5 days
+                </p>
+                <p className="flex items-center gap-1 text-tertiary text-sm">
                   <IoPeopleOutline />
-                </span>
-                1-8 people
+                  1-8 people
+                </p>
+              </div>
+
+              <p className="flex items-center  text-tertiary text-sm mt-6">
+                From <strong className="ml-1">$1,250</strong>/pax
               </p>
             </div>
           </div>
         </CardContainer>
+        <NavigatorCard
+          imgSrc="/images/featured/featured-img.png"
+          title="Explore More for Less! Book Your Perfect Travel Package Today! 🌍✨"
+          btnTxt="Browse Package"
+        />
       </div>
-    </div>
+    </Section>
   );
 }
 

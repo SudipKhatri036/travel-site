@@ -3,85 +3,86 @@ import Logo from "./Logo";
 
 function Header() {
   return (
-    <header className="bg-slate-500">
+    <header className="relative z-10">
       <div className="px-11 py-4 text-white flex justify-between items-center">
-        <Logo imgSrc="./logo-white.png" />
-        <ul className="flex items-center ">
-          <li>
-            <a
-              href="#"
-              className="text-white border-[1px] border-transparent rounded-full text-sm px-3 py-2 hover:bg-[#ffffff]/20 hover:border-[#ffffff]/20  transition-all duration-300 focus-within:outline-none focus-within:border-[#ffffff]/20 focus-within:bg-[#ffffff]/20"
-            >
-              Flights
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              className="text-white border-[1px] border-transparent rounded-full text-sm px-3 py-2 hover:bg-[#ffffff]/20 hover:border-[#ffffff]/20  transition-all duration-300 focus-within:outline-none focus-within:border-[#ffffff]/20 focus-within:bg-[#ffffff]/20"
-            >
-              Stays
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              className="text-white border-[1px] border-transparent rounded-full text-sm px-3 py-2 hover:bg-[#ffffff]/20 hover:border-[#ffffff]/20  transition-all duration-300 focus-within:outline-none focus-within:border-[#ffffff]/20 focus-within:bg-[#ffffff]/20"
-            >
-              Travel Packages
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              className="text-white border-[1px] border-transparent rounded-full text-sm px-3 py-2 hover:bg-[#ffffff]/20 hover:border-[#ffffff]/20  transition-all duration-300 focus-within:outline-none focus-within:border-[#ffffff]/20 focus-within:bg-[#ffffff]/20"
-            >
-              Car Rentals
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              className="text-white border-[1px] border-transparent rounded-full text-sm px-3 py-2 hover:bg-[#ffffff]/20 hover:border-[#ffffff]/20  transition-all duration-300 focus-within:outline-none focus-within:border-[#ffffff]/20 focus-within:bg-[#ffffff]/20"
-            >
-              Events
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              className="text-white border-[1px] border-transparent rounded-full text-sm px-3 py-2 hover:bg-[#ffffff]/20 hover:border-[#ffffff]/20  transition-all duration-300 focus-within:outline-none focus-within:border-[#ffffff]/20 focus-within:bg-[#ffffff]/20"
-            >
-              Money Exchanges
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              className="text-white border-[1px] border-transparent rounded-full text-sm px-3 py-2 hover:bg-[#ffffff]/20 hover:border-[#ffffff]/20  transition-all duration-300 focus-within:outline-none focus-within:border-[#ffffff]/20 focus-within:bg-[#ffffff]/20"
-            >
-              Travel Insuarances
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              className="text-white border-[1px] border-transparent rounded-full text-sm px-3 py-2 hover:bg-[#ffffff]/20 hover:border-[#ffffff]/20  transition-all duration-300 focus-within:outline-none focus-within:border-[#ffffff]/20 focus-within:bg-[#ffffff]/20"
-            >
-              Marketplaces
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              className="text-white border-[1px] border-transparent rounded-full text-sm px-3 py-2 hover:bg-[#ffffff]/20 hover:border-[#ffffff]/20  transition-all duration-300 focus-within:outline-none focus-within:border-[#ffffff]/20 focus-within:bg-[#ffffff]/20"
-            >
-              More
-            </a>
-          </li>
-        </ul>
-
-        <div className="">
+        <div className="flex gap-16">
+          <Logo imgSrc="./logo-white.png" />
+          <ul className="flex items-center ">
+            <li>
+              <a
+                href="#"
+                className="text-white border-[1px] border-transparent rounded-full text-sm px-3 py-2 hover:bg-[#ffffff]/20 hover:border-[#ffffff]/20  transition-all duration-300 focus-within:outline-none focus-within:border-[#ffffff]/20 focus-within:bg-[#ffffff]/20"
+              >
+                Flights
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                className="text-white border-[1px] border-transparent rounded-full text-sm px-3 py-2 hover:bg-[#ffffff]/20 hover:border-[#ffffff]/20  transition-all duration-300 focus-within:outline-none focus-within:border-[#ffffff]/20 focus-within:bg-[#ffffff]/20"
+              >
+                Stays
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                className="text-white border-[1px] border-transparent rounded-full text-sm px-3 py-2 hover:bg-[#ffffff]/20 hover:border-[#ffffff]/20  transition-all duration-300 focus-within:outline-none focus-within:border-[#ffffff]/20 focus-within:bg-[#ffffff]/20"
+              >
+                Travel Packages
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                className="text-white border-[1px] border-transparent rounded-full text-sm px-3 py-2 hover:bg-[#ffffff]/20 hover:border-[#ffffff]/20  transition-all duration-300 focus-within:outline-none focus-within:border-[#ffffff]/20 focus-within:bg-[#ffffff]/20"
+              >
+                Car Rentals
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                className="text-white border-[1px] border-transparent rounded-full text-sm px-3 py-2 hover:bg-[#ffffff]/20 hover:border-[#ffffff]/20  transition-all duration-300 focus-within:outline-none focus-within:border-[#ffffff]/20 focus-within:bg-[#ffffff]/20"
+              >
+                Events
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                className="text-white border-[1px] border-transparent rounded-full text-sm px-3 py-2 hover:bg-[#ffffff]/20 hover:border-[#ffffff]/20  transition-all duration-300 focus-within:outline-none focus-within:border-[#ffffff]/20 focus-within:bg-[#ffffff]/20"
+              >
+                Money Exchanges
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                className="text-white border-[1px] border-transparent rounded-full text-sm px-3 py-2 hover:bg-[#ffffff]/20 hover:border-[#ffffff]/20  transition-all duration-300 focus-within:outline-none focus-within:border-[#ffffff]/20 focus-within:bg-[#ffffff]/20"
+              >
+                Travel Insuarances
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                className="text-white border-[1px] border-transparent rounded-full text-sm px-3 py-2 hover:bg-[#ffffff]/20 hover:border-[#ffffff]/20  transition-all duration-300 focus-within:outline-none focus-within:border-[#ffffff]/20 focus-within:bg-[#ffffff]/20"
+              >
+                Marketplaces
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                className="text-white border-[1px] border-transparent rounded-full text-sm px-3 py-2 hover:bg-[#ffffff]/20 hover:border-[#ffffff]/20  transition-all duration-300 focus-within:outline-none focus-within:border-[#ffffff]/20 focus-within:bg-[#ffffff]/20"
+              >
+                More
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div>
           <select
             name="language"
             id="language"

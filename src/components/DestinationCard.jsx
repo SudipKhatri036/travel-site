@@ -1,11 +1,11 @@
 import React from "react";
 
-function DestinationCard() {
+function DestinationCard({ imgSrc }) {
   return (
     <div className="relative z-0">
       <div className="w-full rounded-2xl">
         <img
-          src="./images/popular/popular-1.png"
+          src={imgSrc || "./images/popular/popular-1.png"}
           alt="Popular destination"
           className="z-0 w-full overflow-hidden  rounded-2xl"
         />
