@@ -38,7 +38,7 @@ function MembershipAd() {
             </li>
           </ul>
 
-          <button className="w-1/2 px-4 py-2.5 rounded-lg border-[1px] border-border-secondary bg-bg-secondary  cursor-pointer">
+          <button className="w-1/2 px-4 py-2.5 rounded-lg border-[1px] border-border-secondary bg-bg-secondary  cursor-pointer hover:bg-transparent hover:text-white transition-all duration-300">
             Become Member
           </button>
         </div>

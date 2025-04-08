@@ -6,12 +6,15 @@
 
   --color-brand: #004eeb;
   --color-primary: #181d27;
+  --color-primaryAlt: #eff4ff;
   --color-bg-primary: #155eef;
   --color-bg-secondary: #fafafa;
+  --color-bg-secondaryAlt: #fafafa;
   --color-border-primary: #d5d7da;
   --color-border-secondary: #e9eaeb;
   --color-btn-secondary: #d5d7da;
   --color-tertiary: #535862;
+  --color-quaternary: #717680;
   --color-txt-secondary: #414651;
   --color-star: #f79009;
 }
@@ -23,4 +26,12 @@ body {
 p {
   /* color: var(--color-tertiary); */
   font: inherit;
+}
+
+.border-gradient {
+  border-image-source: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.12) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
 }

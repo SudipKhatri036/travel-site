@@ -205,7 +205,9 @@ function Footer() {
       </div>
       {/* Copyright */}
       <div className="max-w-7xl mx-auto w-full pt-6 pb-4 flex  flex-col sm:flex-row sm:justify-between items-center border-t-[1px] border-t-border-secondary px-6">
-        <p className="text-xs">&copy; 2077 uticket.com All rights reserved.</p>
+        <p className="text-xs text-tertiary font-light tracking-wide">
+          &copy; 2077 uticket.com All rights reserved.
+        </p>
 
         <ul className="flex items-center gap-4">
           <li>

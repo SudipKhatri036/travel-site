@@ -12,6 +12,36 @@ function DiscountAd() {
         subHeading="Book your stay now and enjoy amazing savings on top accommodations "
       />
 
+      <div className="flex items-center gap-2 mt-6 border-b-[1px] border-b-border-secondary">
+        <button className="px-1 pb-3 border-b-[1px] border-b-border-secondary font-semibold text-sm text-tertiary cursor-pointer hover:text-bg-primary hover:border-b-bg-primary active:text-bg-primary active:border-b-bg-primary transition-all duration-300 ">
+          Domestic
+        </button>
+        <button className="px-1 pb-3 border-b-[1px] border-b-border-secondary font-semibold text-sm text-tertiary cursor-pointer hover:text-bg-primary hover:border-b-bg-primary active:text-bg-primary active:border-b-bg-primary transition-all duration-300">
+          International
+        </button>
+      </div>
+
+      <div className="my-6 flex flex-wrap gap-2">
+        <button className="py-2 px-3 rounded-md bg-primaryAlt  text-quaternary font-semibold hover:text-brand cursor-pointer transition-all duration-300">
+          Kathmandu
+        </button>
+        <button className="py-2 px-3 rounded-md bg-primaryAlt  text-quaternary font-semibold hover:text-brand cursor-pointer transition-all duration-300">
+          Pokhara
+        </button>
+        <button className="py-2 px-3 rounded-md bg-primaryAlt  text-quaternary font-semibold hover:text-brand cursor-pointer transition-all duration-300">
+          Bharatpur
+        </button>
+        <button className="py-2 px-3 rounded-md bg-primaryAlt  text-quaternary font-semibold hover:text-brand cursor-pointer transition-all duration-300">
+          Lalitpur
+        </button>
+        <button className="py-2 px-3 rounded-md bg-primaryAlt  text-quaternary font-semibold hover:text-brand cursor-pointer transition-all duration-300">
+          Birgunj
+        </button>
+        <button className="py-2 px-3 rounded-md bg-primaryAlt  text-quaternary font-semibold hover:text-brand cursor-pointer transition-all duration-300">
+          Biratnagar
+        </button>
+      </div>
+
       <div className="mt-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 rounded-2xl gap-4">
         <CardContainer>
           <div>
