@@ -5,7 +5,7 @@ import HeroForm from "./HeroForm";
 
 function Hero() {
   return (
-    <div className="w-full min-h-[808px]  pt-[80px]  mt-[-80px] relative flex items-center justify-center">
+    <div className="w-full md:min-h-[808px]  pt-[80px]  mt-[-80px] relative flex items-center justify-center">
       <div className="relative z-[4] px-6 max-w-7xl w-full">
         <div className="mb-[-24px]">
           <ul className="p-6 pb-9 flex items-center gap-3 flex-wrap backdrop-blur-[130.89999389648438px] rounded-t-[20px] ">
@@ -52,7 +52,7 @@ function Hero() {
         <h2 className="mt-9 mb-6 font-bold text-xl tracking-tight">
           Recent search
         </h2>
-        <div className="flex flex-wrap gap-4">
+        <div className="grid grid-cols-1 pb-6 md:pb-0 xs:grid-cols-2 md:grid-cols-3 gap-4">
           <div className="py-6 px-4 bg-bg-secondaryAlt flex items-center gap-4 rounded-xl">
             <span className="block text-[32px] text-brand">
               <SlPlane />
@@ -94,11 +94,11 @@ function Hero() {
           </div>
         </div>
       </div>
-      <div className="absolute top-[-5px] z-[2] w-full">
+      <div className="absolute top-[-5px] z-[2] w-full h-full md:h-auto">
         <img
           src="/hero-img.png"
           alt="Hero image"
-          className="max-w-full  w-full h-[808px] object-cover"
+          className="max-w-full  w-full h-full md:h-[808px] object-cover"
         />
       </div>
       <div className="absolute top-0  w-full h-full bg-gradient-to-b from-[#155eefe0] to-[#0c50d900] z-[3]"></div>

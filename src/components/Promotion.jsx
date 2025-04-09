@@ -7,7 +7,7 @@ function Promotion() {
     <Section>
       {/* Promotion feature */}
       <div className="flex flex-col gap-10">
-        <div className="flex items-center gap-4 pb-10">
+        <div className="grid grid-cols-1 w-full xs:w-5/6 mx-auto md:w-full md:grid-cols-3 items-center gap-4 pb-10">
           <div className="text-center">
             <div className="flex justify-center">
               <img
@@ -18,7 +18,7 @@ function Promotion() {
 
             <h3 className="font-semibold mb-1 mt-4">One search in one apps</h3>
 
-            <p className="text-sm text-tertiary leading-5 tracking-tight">
+            <p className="text-sm text-tertiary leading-5 tracking-tight ">
               We find you the best travel deals and travel hacks so that you can
               choose how to book.
             </p>
@@ -61,6 +61,7 @@ function Promotion() {
             <SectionHeading
               heading="Promotions"
               subHeading="Amazing deals on flights, hotels, events, travel packages, car rentals, and money exchange everything you need for your next trip, all in one place!"
+              subStyleClass="max-w-[350px]"
             />
 
             <a
@@ -71,7 +72,7 @@ function Promotion() {
             </a>
           </div>
 
-          <div className="mt-6 flex gap-4">
+          <div className="mt-6 flex  gap-4">
             <div>
               <img src="./images/promo/promo-1.png" alt="promotional image" />
             </div>

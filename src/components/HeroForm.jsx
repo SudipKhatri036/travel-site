@@ -5,7 +5,7 @@ import { SlLocationPin, SlPlane } from "react-icons/sl";
 
 function HeroForm() {
   return (
-    <div className="w-full h-[222px] p-6 rounded-[20px] backdrop-blur-[40px] bg-[#FFFFFFCC] flex flex-col justify-between">
+    <div className="w-full  p-6 rounded-[20px] backdrop-blur-[40px] bg-[#FFFFFFCC] flex flex-col justify-between">
       <form action="#">
         <div className="text-tertiary flex  gap-4">
           <div className="bg-bg-secondary p-2 pr-3 rounded-lg flex items-center gap-2 cursor-pointer relative">
@@ -17,7 +17,7 @@ function HeroForm() {
               className="absolute top-0 peer h-6 w-6 opacity-0 z-99"
             />
             <span className=" z-0  h-6 w-6 cursor-pointer transition-all appearance-none rounded-full bg-slate-100 shadow hover:shadow-md border border-slate-300"></span>
-            <span class="absolute text-white opacity-0 left-[7px]  border-7 h-6 w-6 peer-checked:opacity-100  peer-checked:border-brand rounded-full"></span>
+            <span className="absolute text-white opacity-0 left-[7px]  border-7 h-6 w-6 peer-checked:opacity-100  peer-checked:border-brand rounded-full"></span>
             <label
               htmlFor="one-way"
               className="inline-flex items-center cursor-pointer peer-checked:text-primary peer-checked:font-medium"
@@ -35,7 +35,7 @@ function HeroForm() {
               className="absolute top-0 peer h-6 w-6 opacity-0 z-99"
             />
             <span className=" z-0  h-6 w-6 cursor-pointer transition-all appearance-none rounded-full bg-slate-100 shadow hover:shadow-md border border-slate-300"></span>
-            <span class="absolute text-white opacity-0 left-[7px] border-7 h-6 w-6 peer-checked:opacity-100  peer-checked:border-brand rounded-full"></span>
+            <span className="absolute text-white opacity-0 left-[7px] border-7 h-6 w-6 peer-checked:opacity-100  peer-checked:border-brand rounded-full"></span>
             <label
               htmlFor="round-trip"
               className="inline-flex items-center cursor-pointer peer-checked:text-primary peer-checked:font-medium"
@@ -48,7 +48,7 @@ function HeroForm() {
             name="flight-class"
             className="bg-bg-secondary p-2 rounded-lg cursor-pointer focus:ring-brand focus:border-brand border-r-transparent focus:border-r-transparent inline-flex  border-r-8  "
           >
-            <option value="economy" selected>
+            <option value="economy" defaultValue="selected">
               Economy
             </option>
             <option value="business">Business</option>
@@ -57,7 +57,7 @@ function HeroForm() {
         </div>
 
         {/* Airplane booking */}
-        <div className="grid grid-cols-4 mt-2 gap-2">
+        <div className="grid grid-cols-2 md:grid-cols-4 mt-2 gap-2">
           <div className="col-span-2 py-3 px-4 bg-bg-secondaryAlt flex items-center gap-4 rounded-xl">
             <div className="flex items-center gap-4 rounded-xl">
               <span className="block text-xl text-brand">
@@ -157,10 +157,10 @@ function HeroForm() {
         </div>
       </form>
 
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between mt-4">
         <a
           href="#"
-          className="text-brand text-sm font-normal capitalize hover:underline"
+          className="inline-block text-brand text-sm font-normal capitalize hover:underline"
         >
           Lowest Price Guarantee on uticket.com
         </a>

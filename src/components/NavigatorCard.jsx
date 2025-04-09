@@ -2,7 +2,7 @@ import React from "react";
 
 function NavigatorCard({ imgSrc, title, btnTxt, gradientFrom, gradientTo }) {
   return (
-    <div className="relative rounded-2xl h-full overflow-hidden">
+    <div className="relative rounded-2xl h-full overflow-hidden col-span-1 xs:col-span-2 md:col-span-1">
       <div className="absolute h-full w-full">
         <img
           src={imgSrc || "/images/featured/featured-img.png"}

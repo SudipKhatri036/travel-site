@@ -13,7 +13,7 @@ function FeaturedEvents() {
         subHeading="Discover exciting events happening near you—book your tickets today."
       />
 
-      <div className="mt-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 rounded-2xl gap-4">
+      <div className="mt-6 grid grid-cols-1 h-full xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-5 rounded-2xl gap-4">
         <CardContainer>
           <div>
             <img
