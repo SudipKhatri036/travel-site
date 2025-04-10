@@ -2,8 +2,11 @@ import React from "react";
 import { RiBuildingLine } from "react-icons/ri";
 import { SlPlane } from "react-icons/sl";
 import HeroForm from "./HeroForm";
+import { useNavigate } from "react-router-dom";
 
 function Hero() {
+  const navigate = useNavigate();
+
   return (
     <div className="w-full md:min-h-[808px]  pt-[80px]  mt-[-80px] relative flex items-center justify-center">
       <div className="relative z-[4] px-6 max-w-7xl w-full">
@@ -47,7 +50,24 @@ function Hero() {
             </li>
           </ul>
         </div>
-        <HeroForm />
+
+        <div className="w-full  p-6 rounded-[20px] backdrop-blur-[40px] bg-[#FFFFFFCC] flex flex-col justify-between">
+          <HeroForm />
+          <div className="flex items-center justify-between mt-4">
+            <a
+              href="#"
+              className="inline-block text-brand text-sm font-normal capitalize hover:underline"
+            >
+              Lowest Price Guarantee on uticket.com
+            </a>
+            <button
+              className="px-[18px] py-3 border-2 bg-bg-primary rounded-lg shadow-xs text-white font-semibold text-md cursor-pointer hover:bg-transparent hover:border-bg-primary hover:text-tertiary transition-all duration-300"
+              onClick={() => navigate("/search-result")}
+            >
+              Search Flight
+            </button>
+          </div>
+        </div>
 
         <h2 className="mt-9 mb-6 font-bold text-xl tracking-tight">
           Recent search

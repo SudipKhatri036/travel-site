@@ -4,6 +4,39 @@ import Section from "../ui/Section";
 import CardContainer from "./CardContainer";
 import { CiCalendar, CiLocationOn } from "react-icons/ci";
 import NavigatorCard from "./NavigatorCard";
+import FeaturedEventsCard from "./FeaturedEventsCard";
+import FeaturedGridContainer from "./FeaturedGridContainer";
+
+const featuredEventsMockData = [
+  {
+    imgSrc: "/images/featuredEvents/featured-1.png",
+    eventName: "Fantastic Dubai Tour Package",
+    eventDate: "10 Jun",
+    eventLocation: "Taragaon, Kathmandu",
+    price: 15,
+  },
+  {
+    imgSrc: "/images/featuredEvents/featured-2.png",
+    eventName: "24th Aaha! Rara Pokhara Gold Cup",
+    eventDate: "10 Jun",
+    eventLocation: "Taragaon, Kathmandu",
+    price: 15,
+  },
+  {
+    imgSrc: "/images/featuredEvents/featured-3.png",
+    eventName: "24th Aaha! Rara Pokhara Gold Cup",
+    eventDate: "10 Jun",
+    eventLocation: "Taragaon, Kathmandu",
+    price: 15,
+  },
+  {
+    imgSrc: "/images/featuredEvents/featured-4.png",
+    eventName: "24th Aaha! Rara Pokhara Gold Cup",
+    eventDate: "10 Jun",
+    eventLocation: "Taragaon, Kathmandu",
+    price: 15,
+  },
+];
 
 function FeaturedEvents() {
   return (
@@ -13,142 +46,14 @@ function FeaturedEvents() {
         subHeading="Discover exciting events happening near you—book your tickets today."
       />
 
-      <div className="mt-6 grid grid-cols-1 h-full xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-5 rounded-2xl gap-4">
-        <CardContainer>
-          <div>
-            <img
-              src="/images/featuredEvents/featured-1.png"
-              alt="Event  image"
-            />
-          </div>
+      <FeaturedGridContainer>
+        {featuredEventsMockData?.map((eventData) => (
+          <FeaturedEventsCard
+            key={eventData?.eventName}
+            eventData={eventData}
+          />
+        ))}
 
-          <div className="p-4">
-            <div>
-              <h3 className="mb-1.5 text-md font-bold">
-                24th Aaha! Rara Pokhara Gold Cup
-              </h3>
-
-              <div>
-                <p className="flex items-center gap-1 text-tertiary text-sm">
-                  <CiCalendar />
-                  10 Jun
-                </p>
-                <p className="flex items-center gap-1 text-tertiary text-sm">
-                  <span className="inline-block">
-                    <CiLocationOn />
-                  </span>
-                  Taragaon, Kathmandu
-                </p>
-              </div>
-
-              <p className="flex items-center  text-tertiary text-sm mt-6">
-                From <strong className="ml-1">$15</strong>/day
-              </p>
-            </div>
-          </div>
-        </CardContainer>
-
-        <CardContainer>
-          <div>
-            <img
-              src="/images/featuredEvents/featured-2.png"
-              alt="Event  image"
-            />
-          </div>
-
-          <div className="p-4">
-            <div>
-              <h3 className="mb-1.5 text-md font-bold">
-                24th Aaha! Rara Pokhara Gold Cup
-              </h3>
-
-              <div>
-                <p className="flex items-center gap-1 text-tertiary text-sm">
-                  <CiCalendar />
-                  10 Jun
-                </p>
-                <p className="flex items-center gap-1 text-tertiary text-sm">
-                  <span className="inline-block">
-                    <CiLocationOn />
-                  </span>
-                  Taragaon, Kathmandu
-                </p>
-              </div>
-
-              <p className="flex items-center  text-tertiary text-sm mt-6">
-                From <strong className="ml-1">$15</strong>/day
-              </p>
-            </div>
-          </div>
-        </CardContainer>
-
-        <CardContainer>
-          <div>
-            <img
-              src="/images/featuredEvents/featured-3.png"
-              alt="Event  image"
-            />
-          </div>
-
-          <div className="p-4">
-            <div>
-              <h3 className="mb-1.5 text-md font-bold">
-                24th Aaha! Rara Pokhara Gold Cup
-              </h3>
-
-              <div>
-                <p className="flex items-center gap-1 text-tertiary text-sm">
-                  <CiCalendar />
-                  10 Jun
-                </p>
-                <p className="flex items-center gap-1 text-tertiary text-sm">
-                  <span className="inline-block">
-                    <CiLocationOn />
-                  </span>
-                  Taragaon, Kathmandu
-                </p>
-              </div>
-
-              <p className="flex items-center  text-tertiary text-sm mt-6">
-                From <strong className="ml-1">$15</strong>/day
-              </p>
-            </div>
-          </div>
-        </CardContainer>
-
-        <CardContainer>
-          <div>
-            <img
-              src="/images/featuredEvents/featured-4.png"
-              alt="Event  image"
-            />
-          </div>
-
-          <div className="p-4">
-            <div>
-              <h3 className="mb-1.5 text-md font-bold">
-                24th Aaha! Rara Pokhara Gold Cup
-              </h3>
-
-              <div>
-                <p className="flex items-center gap-1 text-tertiary text-sm">
-                  <CiCalendar />
-                  10 Jun
-                </p>
-                <p className="flex items-center gap-1 text-tertiary text-sm">
-                  <span className="inline-block">
-                    <CiLocationOn />
-                  </span>
-                  Taragaon, Kathmandu
-                </p>
-              </div>
-
-              <p className="flex items-center  text-tertiary text-sm mt-6">
-                From <strong className="ml-1">$15</strong>/day
-              </p>
-            </div>
-          </div>
-        </CardContainer>
         <NavigatorCard
           imgSrc="/images/featuredEvents/featured-img.png"
           title="Explore More for Less! Book Your Perfect Travel Package Today! 🌍✨"
@@ -156,7 +61,7 @@ function FeaturedEvents() {
           gradientFrom="#433E3B00"
           gradientTo="#433E3B"
         />
-      </div>
+      </FeaturedGridContainer>
     </Section>
   );
 }

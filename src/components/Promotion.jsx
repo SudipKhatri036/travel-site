@@ -72,15 +72,27 @@ function Promotion() {
             </a>
           </div>
 
-          <div className="mt-6 flex  gap-4">
+          <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             <div>
-              <img src="./images/promo/promo-1.png" alt="promotional image" />
+              <img
+                src="./images/promo/promo-1.png"
+                alt="promotional image"
+                className="w-full"
+              />
             </div>
             <div>
-              <img src="./images/promo/promo-2.png" alt="promotional image" />
+              <img
+                src="./images/promo/promo-2.png"
+                alt="promotional image"
+                className="w-full"
+              />
             </div>
-            <div>
-              <img src="./images/promo/promo-3.png" alt="promotional image" />
+            <div className="sm:col-span-2 md:col-span-1 w-full">
+              <img
+                src="./images/promo/promo-3.png"
+                alt="promotional image"
+                className="w-full"
+              />
             </div>
           </div>
         </div>

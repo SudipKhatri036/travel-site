@@ -15,12 +15,14 @@ function MobileNavCta() {
           Np| USD
         </option>
       </select>
-      <button className="px-3 py-2 border-[1px] border-white rounded-[8px] mr-2 font-semibold text-sm cursor-pointer hover:bg-white hover:text-txt-secondary focus-within:outline-none focus-within:bg-white focus-within:text-txt-secondary  transition-all duration-300 hidden xs:inline-flex">
-        Agent Login
-      </button>
-      <button className="px-3 py-2 rounded-[8px] border-[1px] border-transparent bg-white text-txt-secondary hover:border-white hover:text-white hover:bg-transparent focus-within:outline-none focus-within:border-white focus-within:text-white focus-within:bg-transparent font-semibold text-sm cursor-pointer transition-all duration-300 hidden xs:inline-flex ">
-        Sign In
-      </button>
+      <div className="flex flex-col gap-3 justify-center">
+        <button className="block px-3 py-2 border-[1px] border-primary text-primary text-3xl rounded-[8px] mr-2 font-semibold cursor-pointer hover:bg-white hover:text-txt-secondary focus-within:outline-none focus-within:bg-white focus-within:text-txt-secondary  transition-all duration-300">
+          Agent Login
+        </button>
+        <button className="block px-3 py-2 rounded-[8px] border-[1px] border-transparent text-3xl text-white bg-primary  hover:border-primary hover:text-priborder-primary hover:bg-transparent focus-within:outline-none focus-within:border-white focus-within:text-white focus-within:bg-transparent font-semibold cursor-pointer transition-all durati ">
+          Sign In
+        </button>
+      </div>
     </div>
   );
 }

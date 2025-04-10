@@ -5,9 +5,7 @@ import AppLayout from "./ui/AppLayout";
 function App() {
   return (
     <>
-      <Header />
       <AppLayout />
-      <Footer />
     </>
   );
 }

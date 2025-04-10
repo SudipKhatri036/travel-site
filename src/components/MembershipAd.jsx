@@ -2,7 +2,7 @@ import React from "react";
 
 function MembershipAd() {
   return (
-    <section className="max-w-7xl mx-auto py-6 px-4 md:py-8 md:px-6  mb-16 ">
+    <section className="max-w-7xl mx-auto py-6 px-4 md:py-8 md:px-6 mb-4  md:mb-16 ">
       <div className="relative overflow-hidden rounded-2xl py-8">
         <div className="w-full sm:w-2/3 lg:w-1/2 px-[22px] sm:px-[42px] py-6 flex flex-col justify-center relative z-[2]">
           <h2 className="capitalize mb-2 text-2xl text-white font-bold">

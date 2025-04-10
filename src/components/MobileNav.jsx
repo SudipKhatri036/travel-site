@@ -1,5 +1,6 @@
 import { AiFillCloseCircle } from "react-icons/ai";
 import HeaderCta from "./HeaderCta";
+import MobileNavCta from "./MobileNavCta";
 
 function MobileNav({ navActive, onCloseNav }) {
   return (
@@ -89,8 +90,8 @@ function MobileNav({ navActive, onCloseNav }) {
             More
           </a>
         </li>
-        <li className="z-[99] xl:hidden">
-          <HeaderCta />
+        <li>
+          <MobileNavCta />
         </li>
       </ul>
     </div>

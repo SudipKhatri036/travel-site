@@ -4,7 +4,7 @@ import Logo from "./Logo";
 function Footer() {
   return (
     <footer className="border-t-[1px] border-t-border-primary">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 sm:justify-items-center pt-14 pb-12 px-6 gap-x-6 gap-y-6">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 sm:justify-items-center pt-7 md:pt-14 pb-6 md:pb-12 px-6 gap-x-6 gap-y-6">
         <div>
           <Logo imgSrc="/logo-blue.png" />
           <p className="mt-4 mb-7 font-normal text-tertiary">

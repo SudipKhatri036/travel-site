@@ -17,6 +17,10 @@
   --color-quaternary: #717680;
   --color-txt-secondary: #414651;
   --color-star: #f79009;
+  --color-disabled: #717680;
+  --color-disabledSubtle: #d5d7da;
+  --color-success: #17b26a;
+  --color-successLight: #ecfdf3;
 }
 
 body {

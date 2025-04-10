@@ -1,10 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Logo({ imgSrc }) {
   return (
-    <div className="logo w-20 h-12">
+    <Link className="inline-block w-20 h-12">
       <img src={imgSrc} alt="Logo" />
-    </div>
+    </Link>
   );
 }
 
