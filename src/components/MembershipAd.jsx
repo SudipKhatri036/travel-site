@@ -1,4 +1,5 @@
 import React from "react";
+import CTAButton from "./CTAButton";
 
 function MembershipAd() {
   return (
@@ -38,9 +39,14 @@ function MembershipAd() {
             </li>
           </ul>
 
-          <button className="w-full sm:w-1/2 px-4 py-2.5 rounded-lg border-[1px] border-border-secondary bg-bg-secondary  cursor-pointer hover:bg-transparent hover:text-white transition-all duration-300">
+          <CTAButton
+            cssStyles={
+              "w-full sm:w-1/2 border-border-secondary bg-bg-secondary   hover:bg-transparent hover:text-white"
+            }
+            btnSize="lg"
+          >
             Become Member
-          </button>
+          </CTAButton>
         </div>
         <div className="absolute w-full h-full top-0 z-[1]  bg-gradient-to-r from-[#033FB8] from-0% to-[#276ffe00] to-100% rounded-2xl"></div>
         <div className="bg-[url(/images/membership/membership-ad-hero.png)] absolute w-full h-full top-0 z-[1.5] object-cover bg-no-repeat"></div>

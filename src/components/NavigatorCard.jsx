@@ -1,3 +1,5 @@
+import CTAButton from "./CTAButton";
+
 function NavigatorCard({ imgSrc, title, btnTxt, gradientFrom, gradientTo }) {
   return (
     <div className="relative rounded-2xl min-h-[300px] md:min-h-full h-full overflow-hidden col-span-1 xs:col-span-2 md:col-span-1">
@@ -18,9 +20,12 @@ function NavigatorCard({ imgSrc, title, btnTxt, gradientFrom, gradientTo }) {
           {title || ""}
         </p>
         <div className="flex items-center justify-center">
-          <button className="w-full border-[1px] max-w-[200px] md:max-w-full  border-btn-secondary rounded-lg font-semibold text-sm py-2.5 px-3.5 mt-4 bg-border-secondary cursor-pointer hover:bg-transparent hover:text-white transition-all duration-300 ">
+          <CTAButton
+            cssStyles="max-w-[200px] w-full border-btn-secondary mt-4 bg-border-secondary hover:bg-transparent hover:text-white md:max-w-full"
+            btnSize="sm"
+          >
             {btnTxt}
-          </button>
+          </CTAButton>
         </div>
       </div>
     </div>
