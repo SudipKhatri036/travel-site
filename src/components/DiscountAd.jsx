@@ -3,8 +3,7 @@ import NavigatorCard from "./NavigatorCard";
 import Section from "../ui/Section";
 import DiscountCard from "./DiscountCard";
 import FeaturedGridContainer from "./FeaturedGridContainer";
-import { useEffect, useState } from "react";
-const hotelDiscountMockData = [];
+import { useState } from "react";
 const HotelMockData = [
   {
     domestic: {
