@@ -43,7 +43,7 @@ function MembershipAd() {
           </button>
         </div>
         <div className="absolute w-full h-full top-0 z-[1]  bg-gradient-to-r from-[#033FB8] from-0% to-[#276ffe00] to-100% rounded-2xl"></div>
-        <div className="bg-[url(./images/membership/membership-ad-hero.png)] absolute w-full h-full top-0 z-[1.5] object-cover bg-no-repeat"></div>
+        <div className="bg-[url(/images/membership/membership-ad-hero.png)] absolute w-full h-full top-0 z-[1.5] object-cover bg-no-repeat"></div>
       </div>
     </section>
   );

@@ -192,21 +192,25 @@ function DiscountAd() {
       />
 
       {/* Domestic or International */}
-      <div
-        className="flex const selectedCityData = cities.find(
-  //   (city) => city.cityName.toLowerCase() === selectedCity.toLowerCase()
-  // );items-center gap-2 mt-6 border-b-[1px] border-b-border-secondary"
-      >
-        {/* <button className="px-1 pb-3 border-b-[1px] border-b-border-secondary font-semibold text-sm text-tertiary cursor-pointer hover:text-bg-primary hover:border-b-bg-primary active:text-bg-primary active:border-b-bg-primary transition-all duration-300 ">
-          Domestic
-        </button> */}
-
+      <div className="flex const items-center gap-2 mt-6 border-b-[1px] border-b-border-secondary">
         {HotelMockData?.map((type, indx) =>
           Object.keys(type).map((t) => {
             return (
               <button
                 key={indx}
-                onClick={() => setFlightType(t)}
+                onClick={() => {
+                  setFlightType(t);
+                  setSelectedCity((c) => {
+                    if (t === "domestic" && c.toLowerCase() !== "kathmandu")
+                      return "kathmandu";
+                    else if (
+                      t === "international" &&
+                      c.toLowerCase() !== "new york"
+                    )
+                      return "new york";
+                    else return c;
+                  });
+                }}
                 className={`px-1 pb-3 border-b-[1px]  font-semibold text-sm uppercase  cursor-pointer  ${
                   t === flightType
                     ? "text-bg-primary border-b-bg-primary"
@@ -223,18 +227,6 @@ function DiscountAd() {
 
       {/* City List */}
       <div className="my-6 flex flex-wrap gap-2">
-        {/* <button
-          className={`py-2 px-3 rounded-md bg-primaryAlt ${
-            city?.cityName.toLowerCase() === selectedCity
-              ? "text-brand"
-              : "text-quaternary"
-          }  font-semibold hover:text-brand cursor-pointer transition-all duration-300 `}
-          key={`${indx}-${city?.cityName}`}
-          onClick={() => setSelectedCity(city?.cityName)}
-        >
-          {city?.cityName}
-        </button> */}
-
         {cities.map((city, indx) => (
           <button
             className={`py-2 px-3 rounded-md bg-primaryAlt ${
@@ -252,10 +244,6 @@ function DiscountAd() {
 
       {/* City hotel Cards */}
       <FeaturedGridContainer>
-        {/* {hotelDiscountMockData?.map((hotel) => (
-          <DiscountCard key={hotel.hotelName} hotel={hotel} />
-        ))} */}
-
         {SelectedCityHotels?.hotelList?.length > 0 ? (
           SelectedCityHotels?.hotelList.map((hotel) => (
             <DiscountCard key={hotel.hotelName} hotel={hotel} />

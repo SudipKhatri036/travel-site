@@ -2,7 +2,7 @@ import React from "react";
 
 function DestinationCard({ imgSrc }) {
   return (
-    <div className="relative z-0">
+    <div className="relative z-0 cursor-pointer hover:scale-105 transition-all duration-300">
       <div className="w-full rounded-2xl">
         <img
           src={imgSrc || "./images/popular/popular-1.png"}

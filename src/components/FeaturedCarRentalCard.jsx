@@ -14,7 +14,7 @@ function FeaturedCarRentalCard({ featuredCarRent }) {
       </div>
 
       <div className="p-4">
-        <div>
+        <div className="text-sm">
           <h3 className="mb-1.5 text-md font-bold">
             {featuredCarRent?.carName || "N/A"}
           </h3>

@@ -61,7 +61,7 @@ function Hero() {
               Lowest Price Guarantee on uticket.com
             </a>
             <button
-              className="px-[18px] py-3 border-2 bg-bg-primary rounded-lg shadow-xs text-white font-semibold text-md cursor-pointer hover:bg-transparent hover:border-bg-primary hover:text-tertiary transition-all duration-300"
+              className="px-[18px] py-3 border-2 bg-bg-primary rounded-lg shadow-xs text-white font-semibold text-sm cursor-pointer hover:bg-transparent hover:border-bg-primary hover:text-tertiary transition-all duration-300"
               onClick={() => navigate("/search-result")}
             >
               Search Flight

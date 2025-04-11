@@ -8,7 +8,7 @@ function Promotion() {
       {/* Promotion feature */}
       <div className="flex flex-col gap-10">
         <div className="grid grid-cols-1 w-full xs:w-5/6 mx-auto md:w-full md:grid-cols-3 items-center gap-4 pb-10">
-          <div className="text-center">
+          <div className="text-center text-sm">
             <div className="flex justify-center">
               <img
                 src="./images/promo/promo-f-1.png"
@@ -16,14 +16,16 @@ function Promotion() {
               />
             </div>
 
-            <h3 className="font-semibold mb-1 mt-4">One search in one apps</h3>
+            <h3 className="font-semibold mb-1 mt-4 text-base">
+              One search in one apps
+            </h3>
 
-            <p className="text-sm text-tertiary leading-5 tracking-tight ">
+            <p className="text-tertiary leading-5 tracking-tight ">
               We find you the best travel deals and travel hacks so that you can
               choose how to book.
             </p>
           </div>
-          <div className="text-center">
+          <div className="text-center text-sm">
             <div className="flex justify-center">
               <img
                 src="./images/promo/promo-f-2.png"
@@ -31,14 +33,16 @@ function Promotion() {
               />
             </div>
 
-            <h3 className="font-semibold mb-1 mt-4">Travel with Peace</h3>
+            <h3 className="font-semibold mb-1 mt-4 text-base">
+              Travel with Peace
+            </h3>
 
-            <p className="text-sm text-tertiary leading-5 tracking-tight">
+            <p className="text-tertiary leading-5 tracking-tight ">
               We find you the best travel deals and travel hacks so that you can
               choose how to book.
             </p>
           </div>
-          <div className="text-center">
+          <div className="text-center text-sm">
             <div className="flex justify-center">
               <img
                 src="./images/promo/promo-f-3.png"
@@ -46,9 +50,11 @@ function Promotion() {
               />
             </div>
 
-            <h3 className="font-semibold mb-1 mt-4">Unlock Exclusive Deals</h3>
+            <h3 className="font-semibold mb-1 mt-4 text-base">
+              Unlock Exclusive Deals
+            </h3>
 
-            <p className="text-sm text-tertiary leading-5 tracking-tight">
+            <p className="text-tertiary leading-5 tracking-tight">
               We find you the best travel deals and travel hacks so that you can
               choose how to book.
             </p>
